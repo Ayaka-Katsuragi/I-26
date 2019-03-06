@@ -5,8 +5,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
 	console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-	bot.user.setActivity("GACD0049 SERVER ERROR!", {type: "PLAYING"});
-	bot.user.setStatus('invisible');
+	bot.user.setActivity("Manage Server", {type: "PLAYING"});
 });
 
 bot.on("guildMemberAdd", async member => {
